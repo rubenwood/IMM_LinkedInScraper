@@ -8,10 +8,8 @@ from selenium import webdriver
 def main(url):
     driver = webdriver.Chrome()
 
-    email = "ruben.wood1@gmail.com"
-    password = "TW1nn130092"
     # if email and password isn't given, it'll prompt in terminal
-    actions.login(driver, email, password)
+    actions.login(driver)
 
     person = Person(url, driver=driver)
 
