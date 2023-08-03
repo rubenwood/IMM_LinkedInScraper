@@ -21,7 +21,8 @@ def main(url, email, password):
         if csvfile.tell() == 0:
             writer.writeheader()
 
-        print(person)
+        print(person.experiences[0])
+        print('\n----\nLocation\n'+person.experiences[0].location)
         
         writer.writerow(
             {
